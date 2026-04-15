@@ -7,7 +7,8 @@ def main():
     # exercise_1d()
     # exercise_1e()
     # exercise_2a()
-    exercise_2b()
+    # exercise_2b()
+    exercise_2c()
 
 
 main()

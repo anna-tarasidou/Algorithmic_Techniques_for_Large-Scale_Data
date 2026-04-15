@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a5179b7e-6c2b-4624-9f90-92a31057cba7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counting_distinct_elements/distinct_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Counting_distinct_elements/distinct_counter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counting_distinct_elements/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Counting_distinct_elements/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Morris_Counter/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Morris_Counter/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Morris_Counter/morris_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Morris_Counter/morris_counter.py" afterDir="false" />
     </list>
@@ -24,25 +26,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3CLS8dxs7zbmlqNBvxqc3Oyvwmt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.morris_counter.executor": "Run",
-    "Python.morris_counters.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.morris_counter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.morris_counters.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

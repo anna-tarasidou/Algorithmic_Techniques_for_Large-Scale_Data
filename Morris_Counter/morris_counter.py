@@ -208,6 +208,7 @@ def exercise_1e():
 
 
 def exercise_2a():
+    # 100 digits of precision
     decimal.getcontext().prec = 100
 
     n_insertions = 1000
@@ -281,6 +282,7 @@ def exercise_2a():
 
 
 def exercise_2b():
+    # 100 digits of precision
     decimal.getcontext().prec = 100
 
     n_insertions = 1000
@@ -326,3 +328,83 @@ def exercise_2b():
         # The total success probability is the sum of probabilities of all surviving paths
         total_prob = sum(state_probs[c].values())
         print(f"c={c}: Strict Success Probability = {total_prob:.10f}")
+
+
+def exercise_2c():
+    # 100 digits of precision
+    decimal.getcontext().prec = 100
+
+    n_insertions = 1000
+    c_values = [2, 3, 4, 5]
+
+    # Probability distribution for one counter
+    P = defaultdict(decimal.Decimal)
+    P[0] = decimal.Decimal('1')
+
+    history = {c: [] for c in c_values}
+    min_probs = {c: (decimal.Decimal('2'), -1) for c in c_values}
+
+    for n in range(1, n_insertions + 1):
+        new_P = defaultdict(decimal.Decimal)
+
+        # Calculate probabilities for one counter
+        for C, prob in P.items():
+            if prob == 0:
+                continue
+
+            # 4-bit limit check, max at 15
+            if C < 15:
+                p_up = decimal.Decimal('1') / (decimal.Decimal('2') ** C)
+                p_stay = decimal.Decimal('1') - p_up
+
+                new_P[C] += prob * p_stay
+                new_P[C + 1] += prob * p_up
+            else:
+                # If it reached 15, it stays there forever
+                new_P[15] += prob
+
+        P = new_P
+
+        # Calculate success probability for the average of the 2 counters
+        for c in c_values:
+            prob_success = decimal.Decimal('0')
+            lower_bound = decimal.Decimal(n) / decimal.Decimal(c)
+            upper_bound = decimal.Decimal(c) * decimal.Decimal(n)
+
+            # Check all combinations of counters C1, C2
+            for C1, p1 in P.items():
+                est1 = (2 ** C1) - 1
+                for C2, p2 in P.items():
+                    est2 = (2 ** C2) - 1
+
+                    # Calculate the average of the two estimations
+                    est_avg = decimal.Decimal(est1 + est2) / decimal.Decimal('2')
+
+                    # If the average estimation is within bounds, add their joint probability (p1 * p2)
+                    if lower_bound <= est_avg <= upper_bound:
+                        prob_success += p1 * p2
+
+            history[c].append(float(prob_success))
+
+            # Track the minimum probability found so far
+            if prob_success < min_probs[c][0]:
+                min_probs[c] = (prob_success, n)
+
+        if n % 250 == 0:
+            print(f"Processed {n}/1000 insertions...")
+
+    print("EXACT PROBABILITY RESULTS: AVERAGE OF 2 COUNTERS")
+    for c in c_values:
+        min_prob, min_n = min_probs[c]
+        print(f"c={c}: Minimum Probability = {min_prob:.10f} at n = {min_n}")
+
+    plt.figure(figsize=(12, 7))
+    colors = {2: 'red', 3: 'purple', 4: 'orange', 5: 'green'}
+    for c in c_values:
+        plt.plot(range(1, n_insertions + 1), history[c], label=f'c = {c}', color=colors[c], linewidth=1.5)
+    plt.xlabel('n (Insertions)')
+    plt.ylabel('Exact Probability of Success')
+    plt.title('2 Morris Counters (a=2, max=15): Exact Probability bounds [n/c, cn]')
+    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.show()
