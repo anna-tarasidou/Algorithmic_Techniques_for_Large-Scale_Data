@@ -1,4 +1,4 @@
-from Counting_distinct_elements.distinct_counter import *
+from distinct_counter import *
 
 
 def main():

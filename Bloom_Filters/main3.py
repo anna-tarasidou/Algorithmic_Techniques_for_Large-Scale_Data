@@ -1,4 +1,4 @@
-from Bloom_Filters.bloom_filters import *
+from bloom_filters import *
 
 
 def main():

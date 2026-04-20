@@ -1,4 +1,4 @@
-from Morris_Counter.morris_counter import *
+from morris_counter import *
 
 
 def main():
