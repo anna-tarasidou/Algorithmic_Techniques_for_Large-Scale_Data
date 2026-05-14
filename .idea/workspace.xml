@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5179b7e-6c2b-4624-9f90-92a31057cba7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2_Data_Streams/count_min.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_Data_Streams/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloom_Filters/bloom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Bloom_Filters/bloom_filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloom_Filters/main3.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Bloom_Filters/main3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Counting_distinct_elements/distinct_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Counting_distinct_elements/distinct_counter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Counting_distinct_elements/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Counting_distinct_elements/main2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Morris_Counter/main1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Morris_Counter/main1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Morris_Counter/morris_counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Morris_Counter/morris_counter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.count_min.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main3.executor": "Run",
-    "Python.morris_counter.executor": "Run",
-    "Python.morris_counters.executor": "Run",
-    "Python.new.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.count_min.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.morris_counter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.morris_counters.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
