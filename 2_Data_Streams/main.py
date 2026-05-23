@@ -17,7 +17,7 @@ def main():
     max_string = None
     max_estimate = -1
 
-    # Generate 1000 random 100-bit strings as our data stream
+    ''' 
     strings = [format(random.getrandbits(100), '0100b') for _ in range(1000)]
 
     # First 999 strings - each gets a count of 10
@@ -40,6 +40,26 @@ def main():
     if est > max_estimate:
         max_estimate = est
         max_string = target_heavy_hitter
+    '''
+
+    target_heavy_hitter = format(random.getrandbits(100), '0100b')
+
+    for i in range(1000):
+        if i < 999:
+            # Generate random 100-bit string
+            s = format(random.getrandbits(100), '0100b')
+            count = 10
+        else:
+            # Inject the special heavy hitter at the end
+            s = target_heavy_hitter
+            count = 100
+
+        cms.update(s, count)
+        est = cms.estimate(s)
+
+        if est > max_estimate:
+            max_estimate = est
+            max_string = s
 
     print(f"Target Heavy Hitter (Real): {target_heavy_hitter}")
     print(f"Algorithm Reported Hitter : {max_string}")
