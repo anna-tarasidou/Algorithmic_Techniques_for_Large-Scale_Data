@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5179b7e-6c2b-4624-9f90-92a31057cba7" name="Changes" comment="Fixed">
-      <change afterPath="$PROJECT_DIR$/3_SparseRecovery/graph_algorithms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_SparseRecovery/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_SparseRecovery/nonzero_sampler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_SparseRecovery/run_experiment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_SparseRecovery/run_stream.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3_SparseRecovery/sparse_recovery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Sublinear_Algorithms/bipartite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Sublinear_Algorithms/connectivity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Sublinear_Algorithms/efficient_tester.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Sublinear_Algorithms/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Sublinear_Algorithms/monotonicity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Sublinear_Algorithms/natural_b_vs_c.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_Counting_distinct_elements/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Counting_distinct_elements/main2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_SparseRecovery/graph_algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sparse_Recovery/graph_algorithms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_SparseRecovery/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sparse_Recovery/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_SparseRecovery/nonzero_sampler.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sparse_Recovery/nonzero_sampler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_SparseRecovery/run_experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sparse_Recovery/run_experiment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_SparseRecovery/run_stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sparse_Recovery/run_stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_SparseRecovery/sparse_recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Sparse_Recovery/sparse_recovery.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +46,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.bipartite.executor": "Run",
+    "Python.connectivity.executor": "Run",
     "Python.count_min.executor": "Run",
+    "Python.dynamic_graph.executor": "Run",
+    "Python.efficient_tester.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.main1.executor": "Run",
     "Python.main2.executor": "Run",
     "Python.main3.executor": "Run",
     "Python.morris_counter.executor": "Run",
     "Python.morris_counters.executor": "Run",
+    "Python.natural_b_vs_c.executor": "Run",
     "Python.new.executor": "Run",
     "Python.run_experiment.executor": "Run",
     "Python.run_stream.executor": "Run",
